@@ -7,4 +7,4 @@ title: "Welcome to my Data Story Site"
 ---
 Welcome to my data storytelling site! ✨
 
-👉 [About the Project](/about/)
+👉 [About the Project](/_pages/about/)
