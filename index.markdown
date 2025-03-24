@@ -5,4 +5,6 @@
 layout: default
 title: "Welcome to my Data Story Site"
 ---
-Hello world! 🚀 Here's my content.
+Welcome to my data storytelling site! ✨
+
+👉 [About the Project](/about/)
