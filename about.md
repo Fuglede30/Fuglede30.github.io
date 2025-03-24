@@ -5,3 +5,5 @@ permalink: /about/
 ---
 
 This is a static page about the project.
+
+[← Back to Home](/)
