@@ -28,7 +28,7 @@ url: "https://fuglede30.github.io/" # the base hostname & protocol for your site
 github_username:  Fuglede30
 
 # Build settings
-theme: jekyll-theme-Reverie
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
   - jekyll-sitemap
