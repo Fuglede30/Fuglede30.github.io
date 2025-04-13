@@ -18,20 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Assigment 2, group 40
-email: s204206@dtu.student.dk
+title: Social data analysis, group 40
+email: s201205@student.dtu.dk, s204206@student.dtu.dk, s204226@student.dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  I hope this is working
-baseurl: "/Fuglede30.github.io" # the subpath of your site, e.g. /blog
-url: "https://fuglede30.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: ""
-github_username:  Fuglede30
+  This website aims to tell the story of crimes in San Fransico, when do crimes happen during the week and where?
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: Time machine
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
+
+source: .
+destination: ./_site
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -48,6 +48,10 @@ plugins:
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
