@@ -3,12 +3,13 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: 'Assignment 2: The San Fransisco crime crawl – Where Data Meets Drama!'
+title: 'Brake the System: Outsmarting urban traffic in NY & LA'
 ---
 
-# Suspect: The Dataset
-In this one-pager, we explore distinct temporal patterns in crimes across San Francisco — focusing on Robbery, Assault, and Weapon Law crimes. What if the timing of these crimes could tell us more than the crimes themselves?
-To support this exploration, the dataset used in this analysis consists of reported crime incidents in San Fransisco from 2003 till present and is sourced from the [San Fransisco Police Department Incident Reports](https://data.sfgov.org/browse?category=Public+Safety&sortBy=relevance&page=1&pageSize=20). The data was accessed on June 2, 2025, which serves as the cutoff date. To ensure consistency and complete annual coverage, we focus exclusively on data from 2003 to 2024.  
+# Under the Hood: The Dataset
+In this one-pager, we explore the temporal rhythms of traffic congestion across major U.S. cities—zeroing in on New York and Los Angeles. What if the when of traffic mattered just as much as the where?
+
+To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on May 10, 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from 2016 through 2022—the full available range.
 
 
 ## Top Congestion Hotspots in New York
