@@ -13,22 +13,8 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 
 
 ## Top Congestion Hotspots in New York and Los Angeles
-<div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="ny_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 1: Heatmap showing the 10 most congested locations in New York City from 2016–2022.
-  </p>
-</div> 
-
 
 As we see in the map above there are certain areas that have way more traffic congestions than others. especially places as the cross over between west street and Battery place, washington mews and 5th avenue, 6th avenue and central park south. improving the infrastructure in these places could lead to better traffic flow in the city overall.
-
-<div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="la_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 2: Heatmap showing the 10 most congested locations in New York City from 2016–2022.
-  </p>
-</div> 
 
 the top tree places of where most of traffic congestion happens are the merging between Sanata Monica Freeway and Golden State Freeway, the split between Golden State Freeway and San Bernadine Freeway and the merging between Santa Ana Freeway and San Bernadino Freeway. All of this happens in the Boyle Heights district.
 
@@ -53,3 +39,7 @@ the top tree places of where most of traffic congestion happens are the merging 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
   Figure 1: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
 </p>
+
+Looking at the heatmaps above, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
+
+In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
