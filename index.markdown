@@ -15,6 +15,9 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 ## Top Congestion Hotspots in New York
 
 <iframe src="ny_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
+  <figcaption>
+    <strong>Figure:</strong> Interactive heatmap of the top 10 most congested locations in New York City (2016–2022). The map highlights specific intersections with exceptionally high congestion frequencies, including West Street & Battery Place, Washington Mews & 5th Avenue, and 6th Avenue & Central Park South. These hotspots indicate areas where targeted infrastructure improvements could significantly enhance overall traffic flow in the city.
+  </figcaption>
 
 
 As we see in the map above there are certain areas that have way more traffic congestions than others. especially places as the cross over between west street and Battery place, washington mews and 5th avenue, 6th avenue and central park south. improving the infrastructure in these places could lead to better traffic flow in the city overall.
