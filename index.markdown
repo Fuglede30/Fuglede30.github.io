@@ -11,7 +11,7 @@ In this one-pager, we explore the temporal rhythms of traffic congestion across 
 
 To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on May 10, 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from 2016 through 2022—the full available range.
 
-## Top Congestion Hotspots in New York and Los Angeles
+# Top Congestion Hotspots in New York and Los Angeles
 
 We want to look at some of the places where the traffic is overloaded most often, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
 
@@ -62,3 +62,9 @@ We are now looking at how the traffic congestions evolve through the 24 hour cyc
 
 We notice that the rush hour seem to start at around 8:40 in LA but it starts much earlier in New York with big clusters of congestions starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts through out most of the day. Here we first see a decline in cluster at around 21:30 in LA and for NY it lasts untill 23:10. It is an indication that there generally is too many cars in these big cities since there is not much of a break in trafiic through the day.
 
+# The inpact of weather
+
+
+# Conclusion: End of the Road
+
+## refferences
