@@ -42,7 +42,7 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 </div>
 
 <div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="hour_bokeh.html" width="100%" height="320" frameborder="0"></iframe>
+  <iframe src="hour_bokeh.html" width="80%" height="420" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
     Figure 5: Interactive plot showing the proportional distributions of different severity levels of car congestions for each city.
   </p>
@@ -69,7 +69,7 @@ We want to look at some of the places where the traffic is overloaded most often
 </div>
 
 <div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="severity_bokeh.html" width="100%" height="320" frameborder="0"></iframe>
+  <iframe src="severity_bokeh.html" width="80%" height="420" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
     Figure 8: Interactive plot showing the top 10 streets of each city for each severity levels.
   </p>
