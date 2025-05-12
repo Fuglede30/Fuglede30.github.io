@@ -68,4 +68,5 @@ We notice that the rush hour seems to start at around 8:40 in LA, but it starts 
 # Conclusion: End of the Road
 
 ## Refferences and Sources
-The dataset used: https://www.kaggle.com/datasets/sobhanmoosavi/us-traffic-congestions-2016-2022
+The dataset used: [US Traffic Congestions 2016-2022](https://www.kaggle.com/datasets/sobhanmoosavi/us-traffic-congestions-2016-2022). Accessed 29th of april 2025
+ 
