@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: 'Brake the System: Outsmarting urban traffic in NY & LA'
+title: 'Brake the System: Outsmarting urban traffic in NY and LA'
 ---
 
 # Under the Hood: The Dataset
