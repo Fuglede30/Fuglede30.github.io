@@ -26,7 +26,7 @@ In Figure 1. above, we see that a clear tendency is that Los Angeles consistentl
     Figure  2: Weekly car congestion for LA and NYC.
   </p>
 </div>
-In Figure 2. above, we see that for both New York and Los Angeles, the number of car congestions is clearly highest on weekdays and lowest during the weekend. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. LA again shows higher congestion overall, which follows the same pattern as we saw in Figure 1.
+Moving on to how the weekly day to day traffic looks we notice in Figure 2. above that for both New York and Los Angeles, the number of car congestions is clearly highest on weekdays and lowest during the weekend. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. LA again shows higher congestion overall, which follows the same pattern as we saw in Figure 1.
 
 
 <div style="text-align: center;">
