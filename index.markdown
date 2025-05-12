@@ -36,42 +36,15 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 <div style="text-align: center;">
   <img src="CalenderLA.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  3: Calender plot for car congestions in LA
+    Figure  4: Calender plot for car congestions in LA
   </p>
 </div>
 
-<div style="text-align: center;">
-  <img src="CalenderLA.png" width="150%" />
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  3: Calender plot for car congestions in LA
-  </p>
-</div>
-
-
-<div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="severity_bokeh.html" width="100%" height="320" frameborder="0"></iframe>
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 4: Hourly proportional distributions of different severity levels.
-  </p>
-</div>
-
-<div style="text-align: center;">
-  <img src="CalenderLA.png" width="150%" />
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  5: Top 10 streets by distance of car congestions in LA
-  </p>
-</div>
-<div style="text-align: center;">
-  <img src="CalenderNY.png" width="150%" />
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  6: Top 10 streets by distance of car congestions in NYC
-  </p>
-</div>
 
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  7: Top 10 streets by distance of car congestions in NYC
+    Figure  5: Top 10 streets by distance of car congestions in NYC
   </p>
 </div>
 
@@ -84,14 +57,14 @@ We want to look at some of the places where the traffic is overloaded most often
 <div style="text-align: center;">
   <img src="top10_car_congestions.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  8: Top 10 streets with most car congestions
+    Figure  6: Top 10 streets with most car congestions
   </p>
 </div>
 
 <div style="text-align: center;">
-  <img src="top10_distance_png" width="150%" />
+  <img src="top10_distance.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  9: Top 10 streets by distance of car congestions
+    Figure  7: Top 10 streets by distance of car congestions
   </p>
 </div>
 
