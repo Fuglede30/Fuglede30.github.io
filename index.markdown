@@ -31,3 +31,25 @@ As we see in the map above there are certain areas that have way more traffic co
 </div> 
 
 the top tree places of where most of traffic congestion happens are the merging between Sanata Monica Freeway and Golden State Freeway, the split between Golden State Freeway and San Bernadine Freeway and the merging between Santa Ana Freeway and San Bernadino Freeway. All of this happens in the Boyle Heights district.
+
+
+## Top Congestion Hotspots in New York and Los Angeles
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
+  <div style="flex: 1 1 45%; min-width: 300px;">
+    <iframe src="ny_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
+    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+      New York City (2016–2022)
+    </p>
+  </div>
+  <div style="flex: 1 1 45%; min-width: 300px;">
+    <iframe src="la_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
+    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+      Los Angeles (2016–2022)
+    </p>
+  </div>
+</div>
+
+<p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
+  Figure 1: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
+</p>
