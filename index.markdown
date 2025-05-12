@@ -9,7 +9,7 @@ title: 'Brake the System: Outsmarting urban traffic in NY and LA'
 # Under the Hood: The Dataset
 In this one-pager, we explore the temporal rhythms of traffic congestion across major U.S. cities—zeroing in on New York and Los Angeles. What if the when of traffic mattered just as much as the where?
 
-To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on May 10, 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from March 22. 2016 to September 8. 2022.
+To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on April 29. 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from March 22. 2016 to September 8. 2022.
 
 # Clocks and Congestion: How Time Shapes Traffic Trends
 
