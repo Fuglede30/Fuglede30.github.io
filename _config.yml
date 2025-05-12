@@ -21,7 +21,7 @@
 title: Social data analysis, group 40
 email: s201205@student.dtu.dk, s204206@student.dtu.dk, s204226@student.dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  This website aims to tell the story of crimes in San Fransico, when do crimes happen during the week and where?
+  This website aims to tell the story of traffic congestions in NYC and LA and how you can avoid them.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
