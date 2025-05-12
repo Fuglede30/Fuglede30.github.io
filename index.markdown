@@ -34,6 +34,8 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 </p>
 </div>
 
+In the calender plots above we notice some tendencies. We see that the least busy days are the 1. of january and 4. of july. This likely comes from the fact that a lot of people are hungover after new year and do not wnat to do anything, and people being too drunk to be able to drive on the 4. of july. For both calender plots we have very similar tendencies. there is more busy months being in February, March, October, November and the start of December with the christmas vacaition reducing the congestion occurences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is nice during the warmer seasons.
+
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
@@ -69,7 +71,7 @@ We want to look at some of the places where the traffic is overloaded most often
 </div>
 
 <div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="severity_bokeh.html" width="120%" height="460" frameborder="0"></iframe>
+  <iframe src="severity_bokeh.html" width="100%" height="600" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
     Figure 8: Interactive plot showing the top 10 streets of each city for each severity levels.
   </p>
