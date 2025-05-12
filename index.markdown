@@ -39,7 +39,7 @@ Looking at the heatmaps above, it’s clear that some areas in both New York and
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
 ## The 24 hour cyckle of NY and LA traffic
-## Traffic Congestion Over Time in New York and Los Angeles
+We are now looking at how the traffic congestions evolve through the 24 hour cyckle of the day. WE are likely to see that rushhours happens, as they do in most cities. But here we can also see where the rush hour starts and ends.
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 45%; min-width: 300px;">
@@ -57,7 +57,7 @@ In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 2: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles from 2016 to 2022.
+  Figure 2: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
 
