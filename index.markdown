@@ -60,4 +60,5 @@ We are now looking at how the traffic congestions evolve through the 24 hour cyc
   Figure 2: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
+We notice that the rush hour seem to start at around 8:40 in LA but it starts much earlier in New York with big clusters of congestions starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts through out most of the day. Here we first see a decline in cluster at around 21:30 in LA and for NY it lasts untill 23:10. It is an indication that there generally is too many cars in these big cities since there is not much of a break in trafiic through the day.
 
