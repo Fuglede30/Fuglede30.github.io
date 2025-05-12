@@ -18,6 +18,8 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
   </p>
 </div>
 
+In Figure 1. above, we see that a clear tendency is that Los Angeles consistently has more congestion events than New York across all years. Both cities show an overall increase in congestion up until 2021, where we see a peak, especially for LA, which reaches over 200,000 congestion events. After 2021, there is a sharp drop for both cities in 2022, likely due to the fact that data after September 8. 2022, is missing. The months after September also have a high rise in traffic congestion, as we see in Figure 3, which explains the drop after 2021. Another observation is that NYC has a slightly more stable trend, while LA shows more variation year to year. This could be tied to differences in city infrastructure, driving culture, or more cars being registered.
+
 <div style="text-align: center;">
   <img src="week_histogram.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
@@ -34,12 +36,12 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 </p>
 </div>
 
-In the calender plots above we notice some tendencies. We see that the least busy days are the 1. of january and 4. of july. This likely comes from the fact that a lot of people are hungover after new year and do not wnat to do anything, and people being too drunk to be able to drive on the 4. of july. For both calender plots we have very similar tendencies. there is more busy months being in February, March, October, November and the start of December with the christmas vacaition reducing the congestion occurences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is nice during the warmer seasons.
+In Figure 3. of our calendar plots, we notice some tendencies. We see that the least busy days are the 1. of January and 4. of July. This likely comes from the fact that a lot of people are hungover after New Year and do not want to do anything, and people being too drunk to be able to drive on the 4. of July. For both calendar plots, we have very similar tendencies. There is more busy months being in February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is nice during the warmer seasons.
 
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  4: Top 10 streets by distance of car congestions in NYC
+    Figure  4: Top 10 streets by distance of car congestion in NYC
   </p>
 </div>
 
