@@ -50,8 +50,7 @@ In Figure 3. of our calendar plots, we notice some tendencies. We see that the l
   </p>
 </div>
 
-
-
+From what we saw in Figure 3, we now look at how specific weather attributes impact traffic delays in Figure 4. From the top left plot, we see that higher temperatures seem to reduce traffic delays in LA quite clearly, while NYC has a more stable trend but starts off with higher delays during colder temperatures. This supports the idea that bad weather slows things down more. For humidity, LA shows a big spike in delay above 80%, while NYC stays mostly the same across the range. With visibility, both cities see fewer delays when visibility is high, which makes sense as it's easier and safer to drive. Pressure doesn't show any strong trend, but we do see random spikes in delay for both cities, especially in NYC. Overall, it looks like LA traffic is more sensitive to weather changes, while NYC stays more consistent across different weather conditions.
 
 # Top Congestion Hotspots in New York and Los Angeles
 
