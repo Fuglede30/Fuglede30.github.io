@@ -71,7 +71,7 @@ We want to look at some of the places where the traffic is overloaded most often
 </div>
 
 <div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="severity_bokeh.html" width="135%" height="590" frameborder="0"></iframe>
+  <iframe src="severity_bokeh.html" width="138%" height="590" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
     Figure 8: Interactive plot showing the top 10 streets of each city for each severity levels.
   </p>
