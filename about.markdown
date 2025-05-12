@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This website is developed by 3 master students at DTU for assignment 2 of the course Social Data Visualization 02806. 
+This website is developed by 3 master students at DTU for their final project in the course Social Data Visualization 02806. 
