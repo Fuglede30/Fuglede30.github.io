@@ -13,6 +13,8 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
 
 ## Top Congestion Hotspots in New York and Los Angeles
 
+We want to look at some of the places where the traffic is overloaded most often, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
+
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 45%; min-width: 300px;">
     <iframe src="ny_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
