@@ -38,8 +38,8 @@ Looking at the heatmaps above, it’s clear that some areas in both New York and
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
-## The 24 hour cyckle of NY and LA traffic
-We are now looking at how the traffic congestions evolve through the 24 hour cyckle of the day. WE are likely to see that rushhours happens, as they do in most cities. But here we can also see where the rush hour starts and ends.
+## The 24-hour cycle of NY and LA traffic
+We are now looking at how the traffic congestions evolve through the 24-hour cycle of the day. We are likely to see that rush hours happen, as they do in most cities. But here we can also see where the rush hour starts and ends.
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 45%; min-width: 300px;">
@@ -60,11 +60,17 @@ We are now looking at how the traffic congestions evolve through the 24 hour cyc
   Figure 2: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
-We notice that the rush hour seem to start at around 8:40 in LA but it starts much earlier in New York with big clusters of congestions starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts through out most of the day. Here we first see a decline in cluster at around 21:30 in LA and for NY it lasts untill 23:10. It is an indication that there generally is too many cars in these big cities since there is not much of a break in trafiic through the day.
+We notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
 
-# The inpact of weather
+# The impact of weather
 
 
 # Conclusion: End of the Road
 
-## refferences
+## Refferences and Sources
+
+## Contributions
+The data preprocessing and correlation of attributes was done by Mona.
+The plots of the impact form weather attributes was done by Mariana.
+And the Heatmaps was done by Christian.
+The website was written mostly by Christian and with contribution from Mona and Mariana where as the explainer notebook was mostly done by Mona and Mariana with some contribution from Christian
