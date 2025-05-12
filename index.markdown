@@ -11,6 +11,8 @@ In this one-pager, we explore the temporal rhythms of traffic congestion across 
 
 To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on May 10, 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from March 22. 2016 to September 8. 2022.
 
+# Clocks and Congestion: How Time Shapes Traffic Trends
+
 <div style="text-align: center;">
   <img src="yearly_boxplot.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
@@ -39,6 +41,8 @@ Moving on to how the weekly day to day traffic looks we notice in Figure 2. abov
 
 In Figure 3. of our calendar plots, we notice some tendencies. We see that the least busy days are the 1. of January and 4. of July. This likely comes from the fact that a lot of people are hungover after New Year and do not want to do anything, and people being too drunk to be able to drive on the 4. of July. For both calendar plots, we have very similar tendencies. There is more busy months being in February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is nice during the warmer seasons.
 
+# The impact of weather
+
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
@@ -46,12 +50,6 @@ In Figure 3. of our calendar plots, we notice some tendencies. We see that the l
   </p>
 </div>
 
-<div style="text-align: center; max-width: 100%; margin: auto;">
-  <iframe src="hour_bokeh.html" width="120%" height="420" frameborder="0"></iframe>
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 5: Interactive plot showing the proportional distributions of different severity levels of car congestions for each city.
-  </p>
-</div>
 
 
 
@@ -62,21 +60,21 @@ We want to look at some of the places where the traffic is overloaded most often
 <div style="text-align: center;">
   <img src="top10_car_congestions.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  6: Top 10 streets with most car congestions
+    Figure  5: Top 10 streets with most car congestions
   </p>
 </div>
 
 <div style="text-align: center;">
   <img src="top10_distance.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  7: Top 10 streets by distance of car congestions
+    Figure  6: Top 10 streets by distance of car congestions
   </p>
 </div>
 
 <div style="text-align: center; max-width: 100%; margin: auto;">
   <iframe src="severity_bokeh.html" width="138%" height="590" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 8: Interactive plot showing the top 10 streets of each city for each severity levels.
+    Figure 7: Interactive plot showing the top 10 streets of each city for each severity levels.
   </p>
 </div>
 
@@ -97,7 +95,7 @@ We want to look at some of the places where the traffic is overloaded most often
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 9: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
+  Figure 8: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
 </p>
 
 Looking at the heatmaps above, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
@@ -123,12 +121,10 @@ We are now looking at how the traffic congestions evolve through the 24-hour cyc
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 10: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
+  Figure 9: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
 We notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
-
-# The impact of weather
 
 
 # Conclusion: End of the Road
