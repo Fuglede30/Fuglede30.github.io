@@ -68,9 +68,4 @@ We notice that the rush hour seems to start at around 8:40 in LA, but it starts 
 # Conclusion: End of the Road
 
 ## Refferences and Sources
-
-## Contributions
-The data preprocessing and correlation of attributes was done by Mona.
-The plots of the impact form weather attributes was done by Mariana.
-And the Heatmaps was done by Christian.
-The website was written mostly by Christian and with contribution from Mona and Mariana where as the explainer notebook was mostly done by Mona and Mariana with some contribution from Christian
+The dataset used: https://www.kaggle.com/datasets/sobhanmoosavi/us-traffic-congestions-2016-2022
