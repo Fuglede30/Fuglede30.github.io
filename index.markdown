@@ -77,6 +77,8 @@ We want to look at some of the places where the traffic is overloaded most often
   </p>
 </div>
 
+Looking at the interactive plot in Figure 7. we notice that new yorks streets takes the lead in most cases for car congestions of severity level 0, but otherwise it is Los Angeles that takes the price for higher levels of severity. This might be related to the fact that the streets of New York are shorter, not being able to reach the amounts of severity that Los Angeles can with its long highways, and higher speeds leading to greater delays. Los Angeles was also found to have more cars than New York so it is no surprise that that comes with more car congestions. The high amount of severity from the I-10 E freeway also confirms that the freeways to neighboring states are packed with cars most of the days.
+
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 45%; min-width: 300px;">
@@ -92,8 +94,6 @@ We want to look at some of the places where the traffic is overloaded most often
     </p>
   </div>
 </div>
-
-Looking at the interactive plot in Figure 7. we notice that new yorks streets takes the lead in most cases for car congestions of severity level 0, but otherwise it is Los Angeles that takes the price for higher levels of severity. This might be related to the fact that the streets of New York are shorter, not being able to reach the amounts of severity that Los Angeles can with its long highways, and higher speeds leading to greater delays. Los Angeles was also found to have more cars than New York so it is no surprise that that comes with more car congestions. The high amount of severity from the I-10 E freeway also confirms that the freeways to neighboring states are packed with cars most of the days.
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
   Figure 8: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
