@@ -63,11 +63,12 @@ We want to look at some of the places where the traffic is overloaded most often
   </p>
 </div>
 
-<iframe src="severity_bokeh.html" width="100%" height="550" style="overflow: auto;" frameborder="0"></iframe>
+<div style="overflow-x: auto; width: 100%;">
+  <iframe src="severity_bokeh.html" width="1400" height="550" style="border: none;" scrolling="no"></iframe>
+</div>
 <p style="font-style: italic; font-size: 0.9em; color: gray;">
   Figure 6: Interactive plot showing the top 10 streets of each city for each severity level.
 </p>
-
 
 When looking at car traffic, we can get congestion of different scales. Some congestion is not that impactful and over quickly, while others take up the whole day to complete and stretch many miles. A way to measure this is with severity, at the interactive plot in Figure 7. we notice that New York's streets take the lead in most cases for car congestion of severity level 0, but otherwise it is Los Angeles that takes the lead for higher levels of severity. This might be related to the fact that the streets of New York are shorter, not being able to reach the amounts of severity that Los Angeles can with its long highways, and higher speeds leading to greater delays. Los Angeles was also found to have more cars than New York, so it is no surprise that this comes with more car congestion. The high amount of severity from the I-10 E freeway also confirms that the freeways to neighboring states are packed with cars most of days.
 
