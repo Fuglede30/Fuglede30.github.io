@@ -202,7 +202,13 @@ The dataset used: [US Traffic Congestions 2016-2022](https://www.kaggle.com/data
 
 [7] Drivemode. (2018, June 20). Drivemode data report: Where and when commuting takes the longest. Retrieved May 13, 2025, from https://www.drivemode.com/blog/engineering/drivemode-data-report-commuting-durations/
 
-[8] Statista. 2023. Annual economic losses from traffic congestion in selected urban areas in the United States in 2022 (in billion U.S. dollars). Retrieved May 13, 2025 from https://www.statista.com/chart/21085/annual-economic-losses-from-traffic-congestion/
+[8]  Statista. 2023. Annual economic losses from traffic congestion in selected urban areas in the United States in 2022 (in billion U.S. dollars). Retrieved May 13, 2025 from https://www.statista.com/chart/21085/annual-economic-losses-from-traffic-congestion/
 
 [9] Visual Capitalist. 2021. How Many Hours Do Americans Lose to Traffic Congestion? Retrieved May 13, 2025, from https://www.visualcapitalist.com/how-many-hours-do-americans-lose-to-traffic-congestion/
+
+[10] Broadway.com. (n.d.). Introductory guide to Broadway. Retrieved May 13, 2025, from https://www.broadway.com/broadway-guide/2/introductory-guide-to-broadway/
+
+[11] Wikipedia. (n.d.). Fifth Avenue. Retrieved May 13, 2025, from https://en.wikipedia.org/wiki/Fifth_Avenue
+
+[12] Wikipedia. (n.d.). Interstate 10 in California. Retrieved May 13, 2025, from https://en.wikipedia.org/wiki/Interstate_10_in_California
  
