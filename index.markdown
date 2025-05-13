@@ -114,8 +114,8 @@ In fact, this is a classic example of **Simpson’s paradox** — where a trend 
 
 ###  Distance vs delay of typical traffic in each city by severity level
 Next up we look into the top 10 streets by distance vs delay of typical traffic in each city. This is done as a bokeh plots, where you can choose the severity level. 
-<div style="overflow-x: auto; width: 120%; transform: scale(0.85); transform-origin: top left; height: 625px;">
-  <iframe src="severity_bokeh.html" width="100%" height="580" style="border: none;" scrolling="no"></iframe>
+<div style="overflow-x: auto; width: 120%; transform: scale(0.85); transform-origin: top left; height: 700px;">
+  <iframe src="severity_bokeh.html" width="100%" height="600" style="border: none;" scrolling="no"></iframe>
 </div>
 <p style="font-style: italic; font-size: 0.9em; color: gray;">
   Figure 7: Interactive bokeh plot showing the top 10 streets of longest distance and delay by each severity level for each city.
