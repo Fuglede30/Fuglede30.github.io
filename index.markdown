@@ -130,8 +130,8 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
 
 ### **🕓 Flow through the busiest streets during 24 hours**
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 100%; margin: auto;">
-  <div style="width: 100%; max-width: 800px; transform: scale(0.80);">
+<div style="display: flex; flex-direction: column; align-items: center; max-width: 100%; margin: auto;">
+  <div style="width: 100%; max-width: 800px; transform: scale(0.80); margin-bottom: 10px;">
     <iframe src="la_top_10_congestion.html" width="120%" height="650px" style="border:none;"></iframe>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
       Los Angeles: 2016–2022
