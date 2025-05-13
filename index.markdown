@@ -28,7 +28,7 @@ We begin by creating histograms and calender plots to explore the distribution o
 <div style="text-align: center;">
   <img src="yearly_boxplot.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  1: Yearly car congestions for LA and NYC.
+    Figure  1: Number of car congestions for LA and NYC throughout the years 2016-2022.
   </p>
 </div>
 
@@ -38,7 +38,7 @@ In Figure 1. we see that 2016 and 2022 are the years with the least observations
 <div style="text-align: center;">
   <img src="week_histogram.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  2: Weekly car congestion for LA and NYC.
+    Figure  2: Weekly average car congestion for LA and NYC.
   </p>
 </div>
 Considering Figure 2, the plots reveals that both cities show similar patterns in terms of when congestion occurs. Weekdays were consistently more congested than weekends. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. 
@@ -71,7 +71,7 @@ We are now looking at how the traffic congestions evolve through the 24-hour cyc
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 4: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
+  Figure 4: Time-based heatmaps showing how traffic congestion develops across New York City and Los Angeles. The heat map dots denotes all car congestions in the specific area within 5 minute interval throughout 24 hours of the day. 
 </p>
 
 In FIgure 4. we notice that in New York City, congestion events were mainly concentrated during the daytime hours from 7 AM to 5 PM. In contrast, Los Angeles showed a different pattern. The busiest hours occurred between 4 PM and 8 PM. However, it's worth noting that between 8 AM and 4 PM, the number of congestion events in Los Angeles is approximately the same as in New York. The key difference — and what contributes to LA having more overall congestion — may come from the additional traffic between 4 PM and 8 PM, where LA experiences significantly more congestion than NY. These differences highlight how the timing and intensity of traffic congestion vary between the two cities, possibly due to differences in work schedules (Los Angeles is known for having a later peak commute, partly due to its flexible work hours and industries like entertainment and tech [7]), commuting behavior, or urban infrastructure.
@@ -81,7 +81,7 @@ We are now interested in analyzing and testing our assumption on whether the wea
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  5: Top 10 streets by distance of car congestion in NYC
+    Figure  5: Delay from typical traffic as a function of weather attributes. The mean values across each respective weather attribute bin along with a LOWESS smoothing fit.
   </p>
 </div>
 
@@ -100,7 +100,7 @@ After conducting a general investigation into overall traffic trends in both NYC
 <div style="text-align: center;">
   <img src="top10_car_congestions.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  6: Top 10 streets with most car congestions
+    Figure  6: Top 10 streets with most car congestions.
   </p>
 </div>
 
@@ -118,7 +118,7 @@ Next up we look into the top 10 streets by distance vs delay of typical traffic 
   <iframe src="severity_bokeh.html" width="120%" height="620" style="border: none;" scrolling="no"></iframe>
 </div>
 <p style="font-style: italic; font-size: 0.9em; color: gray;">
-  Figure 7: Interactive plot showing the top 10 streets of each city for each severity level.
+  Figure 7: Interactive bokeh plot showing the top 10 streets of longest distance and delay by each severity level for each city.
 </p>
 
 Overall, congestion distances are longer in Los Angeles, which aligns with expectations given LA’s larger geographic size compared to NYC. However, for severity levels 0–2, NYC shows longer congestion distances, suggesting that lower-severity incidents in LA do not stretch as far. This implies that in NYC, even low - severity congestion can span significant distances, while in LA, distance correlates more directly with severity.
