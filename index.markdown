@@ -114,8 +114,8 @@ In fact, this is a classic example of **Simpson’s paradox** — where a trend 
 
 ###  Distance vs delay of typical traffic in each city by severity level
 Next up we look into the top 10 streets by distance vs delay of typical traffic in each city. This is done as a bokeh plots, where you can choose the severity level. 
-<div style="overflow-x: auto; width: 120%;">
-  <iframe src="severity_bokeh.html" width="100%" height="580" style="border: none; scrolling: no; transform: scale(0.85); transform-origin: top left;"></iframe>
+<div style="overflow-x: auto; width: 100%; transform: scale(0.85); transform-origin: top left; height: 527px;">
+  <iframe src="severity_bokeh.html" width="120%" height="620" style="border: none;" scrolling="no"></iframe>
 </div>
 <p style="font-style: italic; font-size: 0.9em; color: gray;">
   Figure 7: Interactive plot showing the top 10 streets of each city for each severity level.
@@ -146,10 +146,10 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 7: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
+  Figure 8: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
 </p>
 
-Looking at the heatmaps in Figure 7, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
+Looking at the heatmaps in Figure 8, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
