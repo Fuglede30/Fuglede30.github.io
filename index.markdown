@@ -130,18 +130,20 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
 
 ### **🕓 Flow through the busiest streets during 24 hours**
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: auto; max-width: 1200px;">
-  <div style="flex: 1 1 500px; max-width: 580px;">
-    <iframe src="la_top_10_congestion.html" width="100%" height="500" style="border: none;"></iframe>
-    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
-      Los Angeles: 2016–2022
-    </p>
-  </div>
-  <div style="flex: 1 1 500px; max-width: 580px;">
-    <iframe src="ny_top_10_congestion.html" width="100%" height="500" style="border: none;"></iframe>
-    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
-      New York City: 2016–2022
-    </p>
+<div style="width: 85%; margin: auto;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="flex: 1 1 500px; max-width: 580px;">
+      <iframe src="la_top_10_congestion.html" width="100%" height="500" style="border: none;"></iframe>
+      <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+        Los Angeles: 2016–2022
+      </p>
+    </div>
+    <div style="flex: 1 1 500px; max-width: 580px;">
+      <iframe src="ny_top_10_congestion.html" width="100%" height="500" style="border: none;"></iframe>
+      <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+        New York City: 2016–2022
+      </p>
+    </div>
   </div>
 </div>
 
