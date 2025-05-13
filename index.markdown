@@ -2,10 +2,8 @@
 layout: home
 title: "Brake the System: Outsmarting urban traffic in NYC and LA 🚗"
 ---
-<div style="background-image: url('https://raw.githubusercontent.com/Fuglede30/Fuglede30.github.io/publish/BackgroundImage.png'); background-size: cover; background-position: center; height: 300px;">
+<div style="background-image: url('https://raw.githubusercontent.com/Fuglede30/Fuglede30.github.io/publish/BackgroundImage.png'); background-size: cover; background-position: center; height: 450px;">
 </div>
-
-
 
 <a href="https://github.com/Fuglede30/Fuglede30.github.io/blob/publish/Explainer_notebook.zip">link to explainer notebook</a>
 <h1><u>Under the Hood: The Dataset</u></h1>
