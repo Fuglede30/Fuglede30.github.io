@@ -63,17 +63,10 @@ We want to look at some of the places where the traffic is overloaded most often
   </p>
 </div>
 
-<div style="text-align: center;">
-  <img src="top10_distance.png" width="150%" />
-  <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  6: Top 10 streets by distance of car congestions
-  </p>
-</div>
-
 <div style="text-align: center; max-width: 100%; margin: auto;">
   <iframe src="severity_bokeh.html" width="140%" height="550" frameborder="0"></iframe>
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure 7: Interactive plot showing the top 10 streets of each city for each severity levels.
+    Figure 6: Interactive plot showing the top 10 streets of each city for each severity levels.
   </p>
 </div>
 
@@ -96,10 +89,10 @@ When looking at car traffic, we can get congestion of different scales. Some con
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 8: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
+  Figure 7: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
 </p>
 
-Looking at the heatmaps in Figure 8, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
+Looking at the heatmaps in Figure 7, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
@@ -122,10 +115,10 @@ We are now looking at how the traffic congestions evolve through the 24-hour cyc
 </div>
 
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 9: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
+  Figure 8: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
-In FIgure 9. we notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
+In FIgure 8. we notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
 
 
 # Conclusion: End of the Road
