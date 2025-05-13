@@ -132,13 +132,13 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 40%; min-width: 250px;">
-    <iframe src="la_top_10_congestion.html" width="100%" height="600px" style="border:none;"></iframe>
+    <iframe src="la_top_10_congestion.html" width="130%" height="600px" style="border:none;"></iframe>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
       Los Angeles: 2016–2022
     </p>
   </div>
   <div style="flex: 1 1 40%; min-width: 250px;">
-    <iframe src="ny_top_10_congestion.html" width="100%" height="600px" style="border:none;"></iframe>
+    <iframe src="ny_top_10_congestion.html" width="130%" height="600px" style="border:none;"></iframe>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
       New York City: 2016–2022
     </p>
