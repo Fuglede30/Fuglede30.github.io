@@ -5,6 +5,9 @@
 layout: home
 title: "<strong>Brake the System: Outsmarting urban traffic in NYC and LA 🚗</strong>"
 ---
+<div style="background-image: url('/WebsiteImage.png'); background-size: cover; background-position: center; padding: 100px 20px; color: white; text-align: center;">
+  <h1><strong>Brake the System: Outsmarting urban traffic in NYC and LA 🚗</strong></h1>
+</div>
 
 <a href="https://github.com/Fuglede30/Fuglede30.github.io/blob/publish/Explainer_notebook.zip">link to explainer notebook</a>
 <h1><u>Under the Hood: The Dataset</u></h1>
