@@ -93,11 +93,13 @@ We want to look at some of the places where the traffic is overloaded most often
   </div>
 </div>
 
+Looking at the interactive plot in Figure 7. we notice that new yorks streets takes the lead in most cases for car congestions of severity level 0, but otherwise it is Los Angeles that takes the price for higher levels of severity. This might be related to the fact that the streets of New York are shorter, not being able to reach the amounts of severity that Los Angeles can with its long highways, and higher speeds leading to greater delays. Los Angeles was also found to have more cars than New York so it is no surprise that that comes with more car congestions. The high amount of severity from the I-10 E freeway also confirms that the freeways to neighboring states are packed with cars most of the days.
+
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
   Figure 8: Heatmaps showing the 10 most congested locations in New York City and Los Angeles from 2016–2022.
 </p>
 
-Looking at the heatmaps above, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
+Looking at the heatmaps in Figure 8, it’s clear that some areas in both New York and Los Angeles deal with much heavier traffic congestion than others. In New York, places like the intersection of West Street and Battery Place, Washington Mews and 5th Avenue, and 6th Avenue near Central Park South stand out. These are all busy parts of the city where a lot of streets come together, so it’s not surprising they get backed up. Making improvements to the infrastructure in these areas could really help ease the flow.
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
@@ -123,7 +125,7 @@ We are now looking at how the traffic congestions evolve through the 24-hour cyc
   Figure 9: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
 </p>
 
-We notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
+In FIgure 9. we notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
 
 
 # Conclusion: End of the Road
