@@ -160,9 +160,9 @@ Time-based patterns show weekday peaks, with Fridays being the worst, and winter
 
 Weather plays a measurable role with colder, more humid, or low-visibility conditions correlating with increased delays. This supports the idea that inclement weather pushes more people into cars and slows traffic down.
 
-Digging into street-level analysis reveals hotspot paradoxes: while LA may spread its congestion over more streets, NYC’s top streets suffer more intensely, demonstrating how localized analysis can reveal trends that aggregate data might obscure.
+Digging into street-level analysis reveals hotspots: while LA may spread its congestion over more streets, NYC’s top streets suffer more intensely, demonstrating how localized analysis can reveal trends that aggregate data might obscure.
 
-Ultimately, these insights are more than just interesting — they’re actionable. By identifying congestion patterns tied to time, weather, and geography, urban planners, policymakers, and commuters alike can make smarter, data-driven decisions. Whether it’s improving specific traffic chokepoints or adjusting commute schedules, data like this gives us the tools to "brake the system"—and outsmart urban traffic.
+Ultimately, by identifying congestion patterns tied to time, weather, and geography, urban planners, policymakers, and commuters alike can make smarter, data-driven decisions. Whether it’s improving specific traffic chokepoints or adjusting commute schedules, data like this gives us the tools to "brake the system"—and outsmart urban traffic.
 
 ## Refferences and Sources
 The dataset used: [US Traffic Congestions 2016-2022](https://www.kaggle.com/datasets/sobhanmoosavi/us-traffic-congestions-2016-2022). Accessed 29th of april 2025
