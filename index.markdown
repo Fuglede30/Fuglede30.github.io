@@ -2,9 +2,7 @@
 layout: home
 title: "Brake the System: Outsmarting urban traffic in NYC and LA 🚗"
 ---
-
-<div style="background-image: url('https://raw.githubusercontent.com/Fuglede30/Fuglede30.github.io/publish/BackgroundImage.png'); background-size: cover; background-position: center; padding: 100px 20px; color: white; text-align: center;">
-  <h1><strong>Brake the System: Outsmarting urban traffic in NYC and LA 🚗</strong></h1>
+<div style="background-image: url('https://raw.githubusercontent.com/Fuglede30/Fuglede30.github.io/publish/BackgroundImage.png'); background-size: cover; background-position: center; height: 300px;">
 </div>
 
 
