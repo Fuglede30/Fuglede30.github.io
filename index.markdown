@@ -7,12 +7,24 @@ title: 'Brake the System: Outsmarting urban traffic in NY and LA'
 ---
 
 # Under the Hood: The Dataset
-In this one-pager, we explore the temporal rhythms of traffic congestion across major U.S. cities—zeroing in on New York and Los Angeles. What if the when of traffic mattered just as much as the where?
+Every day, millions of Americans lose precious time sitting in traffic. Whether it’s the frustration of a delayed commute, the cost of wasted fuel, or the toll on productivity, traffic congestion is more than just a a local issure — it’s a national issue that touches nearly everyone.
 
-To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) dataset, compiled by Sobhan Moosavi. It contains detailed records of congestion incidents across major urban areas, based on real-time traffic reports. The dataset was last accessed on April 29. 2025. For consistency and completeness, our analysis focuses exclusively on congestion data from March 22. 2016 to September 8. 2022.
+This website explores the complex dataset of traffic congestion in the United States through a powerful, real-world dataset comprising **33 million traffic events** across **49 U.S. states**, recorded between **March 2016 and September 2022**. The data — sourced from a network of **APIs pulling live traffic updates** — is rich and comprehensive, drawing on:
+
+- Federal and state transportation departments  
+- Law enforcement reports  
+- Roadway sensors and traffic cameras  
+- Real-time GPS and telemetry feeds
+
+Each entry in this **12 GB dataset** is packed with details, from **severity levels** and **expected delays**, to **weather conditions**, **timestamps**, and **geographic coordinates**. Together, these records paint a detailed picture of when, where, and how congestion happens.
+
+While the dataset spans the entire country, we focus on **New York City** and **Los Angeles** — two iconic urban giants that consistently rank as the most **traffic-congested** and **densely populated** cities in the U.S. [2]. Their scale, diversity, and traffic challenges make them ideal case studies for uncovering patterns, trends, and insights that could apply to cities nationwide. 
+For a reasonable comparison between NYC and LA, we must first know how many observations the dataset has in each city. For NYC, we have $604.606$ observations and for LA we have $905.284$ observations. Further, the size of the cities also matter. NYC is $778.2$ $\text{km}^2$ [5] whereas LA is $1.302$ $\text{km}^2$ [6]. This suggests that we should also consider the number of streets in each city where car congestions have occurred. For NYC, the number of streets reported where car congestions have occured is ``606``, whereas in LA, the reported number of streets is ``1721`` - more than double **(Code below)**. This indicates, that although NYC has 30% less observations than LA, the congestions that do occur in NYC are likely to happen on fewer, more heavily trafficked streets whereas for LA, it has more streets and highways to distribute over. 
+
+Our main goal is to help users spot **where and when traffic tends to be the worst** in each city, and to see how things like **weather, time of day, or even the day of the week** play a role. With this, we hope to discover patterns that could help improve **traffic management**, or even just help **commuters make better travel choices**.
 
 # Clocks and Congestion: How Time Shapes Traffic Trends
-
+We began by creating histograms and calender plots to explore the distribution of congestion events over time — specifically across different **hours of the day**, **days of the week**, and **months of the year**. We generated these plots separately for **New York City** and **Los Angeles** to allow for a direct comparison between the two.
 <div style="text-align: center;">
   <img src="yearly_boxplot.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
@@ -20,7 +32,7 @@ To drive this analysis, we use the U.S. Traffic Congestions (2016–2022) datase
   </p>
 </div>
 
-In Figure 1. above, we see that a clear tendency is that Los Angeles consistently has more congestion events than New York across all years. Both cities show an overall increase in congestion up until 2021, where we see a peak, especially for LA, which reaches over 200,000 congestion events. After 2021, there is a sharp drop for both cities in 2022, likely due to the fact that data after September 8. 2022, is missing. The months after September also have a high rise in traffic congestion, as we see in Figure 3, which explains the drop after 2021. Another observation is that NYC has a slightly more stable trend, while LA shows more variation year to year. This could be tied to differences in city infrastructure, driving culture, or more cars being registered.
+In Figure 1. we see that 2016 and 2022 are the years with the least observations for both cities, which aligns with 3 months missing each. On the other hand, we see that the number of car congestions in 2017-2019 are fairly stable in both cities. However LA peaks a bit more than previous years in 2020, and in 2021 we see both cities having a significant increase in number of car congestions. Further, online research shows that New York City, indeed had a *Great Gotham Vroom Boom in 2020*, leading to 19% more bought cars from June to July compared to 2019 due to the first wave of Covid. Due to this, there was an increase in car sales, as people tried to avoid taking public transportation [3][4]. New York City being very public-transport dependent and very urban dense, it would be plausible that the number of car congestions increased during this time. The same spike can be seen for Los Angeles, that is heavily car-centric, that people were likely reluctant to take public transport. Further, LA hosts much of TV production that was otherwise shut down during Covid, and boom in delivery services along with infrastructure projects [4]. 
 
 <div style="text-align: center;">
   <img src="week_histogram.png" width="150%" />
@@ -28,8 +40,7 @@ In Figure 1. above, we see that a clear tendency is that Los Angeles consistentl
     Figure  2: Weekly car congestion for LA and NYC.
   </p>
 </div>
-Moving on to how the weekly day to day traffic looks we notice in Figure 2. above that for both New York and Los Angeles, the number of car congestions is clearly highest on weekdays and lowest during the weekend. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. LA again shows higher congestion overall, which follows the same pattern as we saw in Figure 1.
-
+Considering Figure 2, the plots reveals that both cities show similar patterns in terms of when congestion occurs. **Weekdays were consistently more congested than weekends**. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. 
 
 <div style="text-align: center;">
 <img src="CalenderNY.png" width="100%" /><br />
@@ -38,39 +49,86 @@ Moving on to how the weekly day to day traffic looks we notice in Figure 2. abov
     Figure 3: Calendar plots for car congestions in NYC (top) and LA (bottom).
 </p>
 </div>
+Looking at the calender plot in Figure 3, we see that **winter months experienced more traffic events compared to summer months**. Further, we see that the least busy days are the 1. of January and 4. of July. This pattern may be explained by reduced activity due to post–New Year’s hangovers and, on the 4th, by many individuals being unable to drive due to alcohol consumption. For both calendar plots, we have very similar tendencies. The most busy months are February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is warmer.
 
-In Figure 3. of our calendar plots, we notice some tendencies. We see that the least busy days are the 1. of January and 4. of July. This likely comes from the fact that a lot of people are hungover after New Year and do not want to do anything, and people being too drunk to be able to drive on the 4. of July. For both calendar plots, we have very similar tendencies. There is more busy months being in February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is nice during the warmer seasons.
+### The 24-hour cycle of NY and LA traffic
+We are now looking at how the traffic congestions evolve through the 24-hour cycle of the day.
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
+  <div style="flex: 1 1 45%; min-width: 300px;">
+    <iframe src="la_time_map.html" width="100%" height="500px" style="border:none;"></iframe>
+    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+      Los Angeles: 2016–2022
+    </p>
+  </div>
+  <div style="flex: 1 1 45%; min-width: 300px;">
+    <iframe src="ny_time_map.html" width="100%" height="500px" style="border:none;"></iframe>
+    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
+      New York City: 2016–2022
+    </p>
+  </div>
+</div>
 
-# The impact of weather
+<p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
+  Figure 4: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
+</p>
 
+In FIgure 4. we notice that in New York City, congestion events were mainly concentrated during the daytime hours from 7 AM to 5 PM. In contrast, Los Angeles showed a different pattern. The busiest hours occurred between 4 PM and 8 PM. However, it's worth noting that between 8 AM and 4 PM, the number of congestion events in Los Angeles is approximately the same as in New York. The key difference — and what contributes to LA having more overall congestion — may come from the additional traffic between 4 PM and 8 PM, where LA experiences significantly more congestion than NY. These differences highlight how the timing and intensity of traffic congestion vary between the two cities, possibly due to differences in work schedules (Los Angeles is known for having a later peak commute, partly due to its flexible work hours and industries like entertainment and tech [7]), commuting behavior, or urban infrastructure.
+
+# Weather impact on delay from typical traffic
+
+We are also interested in analyzing and testing our assumption on whether the weather attributes played a role on the typical traffic delay. We will use the 4 numeric variables ``Temperature(F)``, ``Humidity(%)``, ``Visibility(mi)``, ``Pressure(in)``. We plot these on the $x$-axis with ``DelayFromTypicalTraffic(mins)`` on the $y$-axis. However, due to having ``2139`` unique values for typical traffic delay, and only between ``25-215`` unique values for the weather attributes and approximately $1.5$ million observations, we decide to bin the weather attributes in dynamic equal sized bins, such that each attribute has less bins than amount of unique values. To further migitate possible fluctuations for few observations, we use LOWESS smoothing in an attempt to capture a global trend for each weather attribute in relation to delay in typical traffic. 
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  4: Top 10 streets by distance of car congestion in NYC
+    Figure  5: Top 10 streets by distance of car congestion in NYC
   </p>
 </div>
+### Weather vs. Traffic Delay: Temperature, Humidity, and Visibility
 
-From what we saw in Figure 3, we now look at how specific weather attributes impact traffic delays in Figure 4. From the top left plot, we see that higher temperatures seem to reduce traffic delays in LA quite clearly, while NYC has a more stable trend but starts off with higher delays during colder temperatures. This supports the idea that bad weather slows things down more and people might be more likely to use other means of transportation when the weather is nice. For humidity, LA and NYC show a big spike in delay above 80%, this could come from more extreme weather like rain or heatwaves, which occur when humidity is high. With visibility, both cities see fewer delays when visibility is high, which makes sense as it's easier and safer to drive. Pressure doesn't show any strong trend, but we do see random spikes in delay for both cities, especially in NYC. Overall, it looks like LA traffic is more sensitive to weather changes, while NYC stays more consistent across different weather conditions.
+Looking at **`Temperature(F)`**, NYC generally experiences colder weather than LA. In both cities, **traffic delays peak at the lowest temperatures**, likely due to people avoiding walking or public transport in the cold, or due to weather-related hazards like snow and ice.
+
+While LA shows a **steady decline** in delay as temperatures rise, NYC follows a **nonlinear trend**: delays drop, then spike around 40°F, before falling again after 70°F. This mid-range increase may reflect challenges like rain or wind that worsen driving conditions. Both cities see a noticeable **drop in delay near 80°F**, possibly due to seasonal changes like summer vacations or increased use of alternative transportation.
+
+For **`Humidity(%)`**, delays stay fairly stable around 1.5 minutes, but begin to **increase past 80%**, likely due to rain or general discomfort leading to more car use.
+
+Finally, lower **`Visibility(mi)`** correlates with longer delays in both cities, as drivers become more cautious. However, **LA’s delays stabilize more clearly**, suggesting it may be better equipped to handle low-visibility conditions.
+
+
 
 # Top Traffic Bottlenecks: Where Congestion Hits Hardest
 
-We want to look at some of the places where the traffic is overloaded most often, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
+After conducting a general investigation into overall traffic trends in both **NYC** and **LA**, we decided to take a closer look at the **top 10 streets** in each city. Our aim was to analyze how these streets differ across various categories. By focusing on the most frequently affected or busiest streets, we want to look at some of the places where the traffic is overloaded most often, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
 
 <div style="text-align: center;">
   <img src="top10_car_congestions.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  5: Top 10 streets with most car congestions
+    Figure  6: Top 10 streets with most car congestions
   </p>
 </div>
 
+The plot reveals that, among the **top 3 most congested streets**, **NYC exhibits higher levels of congestion** compared to LA. This is a notable observation that was not apparent when analyzing the full dataset all at once. By narrowing the focus to only the busiest streets, distinct patterns emerge that might otherwise be obscured by the presence of many less-trafficked streets.
+
+One possible explanation for this difference is **urban infrastructure**: NYC tends to have **narrower streets** and a **denser street grid**, which can lead to greater bottlenecks on major roads. In contrast, LA’s urban design typically includes **wider roads** and **more dispersed traffic flow**, which may help mitigate congestion even on heavily used streets.
+
+This insight highlights the value of **granular, location-specific analysis** and demonstrates that while LA may appear more congested overall, **individual hotspots in NYC can experience more severe congestion**.
+
+In fact, this is a classic example of **Simpson’s paradox** — where a trend that appears in aggregated data disappears or reverses when the data is disaggregated. Although LA shows higher congestion on average, a closer look at the top streets reveals the opposite trend, emphasizing the importance of context and segmentation in data analysis. 
+
+Next up we look into the top 10 streets by distance vs delay of typical traffic in each city. This is done as a bokeh plots, where you can choose the severity level. 
 <div style="overflow-x: auto; width: 100%;">
   <iframe src="severity_bokeh.html" width="100%" height="560" style="border: none;" scrolling="no"></iframe>
 </div>
 <p style="font-style: italic; font-size: 0.9em; color: gray;">
-  Figure 6: Interactive plot showing the top 10 streets of each city for each severity level.
+  Figure 7: Interactive plot showing the top 10 streets of each city for each severity level.
 </p>
 
-When looking at car traffic, we can get congestion of different scales. Some congestion is not that impactful and over quickly, while others take up the whole day to complete and stretch many miles. A way to measure this is with severity, at the interactive plot in Figure 7. we notice that New York's streets take the lead in most cases for car congestion of severity level 0, but otherwise it is Los Angeles that takes the lead for higher levels of severity. This might be related to the fact that the streets of New York are shorter, not being able to reach the amounts of severity that Los Angeles can with its long highways, and higher speeds leading to greater delays. Los Angeles was also found to have more cars than New York, so it is no surprise that this comes with more car congestion. The high amount of severity from the I-10 E freeway also confirms that the freeways to neighboring states are packed with cars most of days.
+Overall, congestion distances are longer in Los Angeles, which aligns with expectations given LA’s larger geographic size compared to NYC. However, for severity levels 0–2, NYC shows longer congestion distances, suggesting that lower-severity incidents in LA do not stretch as far. This implies that in NYC, even low - severity congestion can span significant distances, while in LA, distance correlates more directly with severity.
+
+At severity level 3, LA once again leads in congestion distance, reinforcing how its vast layout influences severe traffic events.
+
+Looking at delay relative to typical traffic, NYC has longer delays overall, but LA shows higher delays at severity levels 0 and 1 - despite shorter distances. This may indicate denser traffic hotspots in LA where even short-distance congestion causes significant delays.
+
+Interestingly, at severity level 3, LA has longer distances but shorter delays, while NYC has shorter distances but longer delays. This contrast suggests that NYC’s severe congestion is more compact and intense, while LA’s is more spread out, causing less delay per mile. 
 
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
@@ -96,32 +154,16 @@ Looking at the heatmaps in Figure 7, it’s clear that some areas in both New Yo
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
-# The 24-hour cycle of NY and LA traffic
-We are now looking at how the traffic congestions evolve through the 24-hour cycle of the day. We are likely to see that rush hours happen, as they do in most cities. But here we can also see where the rush hour starts and ends.
-
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
-  <div style="flex: 1 1 45%; min-width: 300px;">
-    <iframe src="la_time_map.html" width="100%" height="500px" style="border:none;"></iframe>
-    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
-      Los Angeles: 2016–2022
-    </p>
-  </div>
-  <div style="flex: 1 1 45%; min-width: 300px;">
-    <iframe src="ny_time_map.html" width="100%" height="500px" style="border:none;"></iframe>
-    <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
-      New York City: 2016–2022
-    </p>
-  </div>
-</div>
-
-<p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
-  Figure 8: Time-based heatmaps showing how traffic congestion developed across New York City and Los Angeles through the day, from 2016 to 2022.
-</p>
-
-In FIgure 8. we notice that the rush hour seems to start at around 8:40 in LA, but it starts much earlier in New York, with big clusters of congestion starting as early as 6:00. The rush hour does not look as much like a rush "hour" since it lasts throughout most of the day. Here we first see a decline in cluster at around 21:30 in LA, and for NY it lasts until 23:10. It is an indication that there are generally too many cars in these big cities since there is not much of a break in traffic through the day.
-
-
 # Conclusion: End of the Road
+Our deep dive into traffic congestion across New York City and Los Angeles reveals not just when and where congestion occurs, but how it behaves differently in two of America’s most iconic cities. From a high-level perspective, Los Angeles records more congestion events overall, likely due to its larger size and car-centric layout. Yet, New York City shows higher delay times, even over shorter distances, highlighting how its dense infrastructure can intensify congestion.
+
+Time-based patterns show weekday peaks, with Fridays being the worst, and winter months consistently busier than summer. LA tends to have a later congestion peak (4–8 PM) compared to NYC’s more typical morning-to-afternoon cycle.
+
+Weather plays a measurable role with colder, more humid, or low-visibility conditions correlating with increased delays. This supports the idea that inclement weather pushes more people into cars and slows traffic down.
+
+Digging into street-level analysis reveals hotspot paradoxes: while LA may spread its congestion over more streets, NYC’s top streets suffer more intensely, demonstrating how localized analysis can reveal trends that aggregate data might obscure.
+
+Ultimately, these insights are more than just interesting — they’re actionable. By identifying congestion patterns tied to time, weather, and geography, urban planners, policymakers, and commuters alike can make smarter, data-driven decisions. Whether it’s improving specific traffic chokepoints or adjusting commute schedules, data like this gives us the tools to "brake the system"—and outsmart urban traffic.
 
 ## Refferences and Sources
 The dataset used: [US Traffic Congestions 2016-2022](https://www.kaggle.com/datasets/sobhanmoosavi/us-traffic-congestions-2016-2022). Accessed 29th of april 2025
