@@ -6,6 +6,7 @@ layout: home
 title: "<strong>Brake the System: Outsmarting urban traffic in NYC and LA 🚗</strong>"
 ---
 
+<a href="https://github.com/Fuglede30/Fuglede30.github.io/blob/publish/Explainer_notebook.zip">link to explainer notebook</a>
 <h1><u>Under the Hood: The Dataset</u></h1>
 Every day, millions of Americans lose precious time and money sitting in traffic. According to Statista in 2020, both the government suffers approximately $66.1 billion USD annually [8] due to car congestions along with private habitants losing around 100 hours weekly [9]. Whether it’s the frustration of a delayed commute, the cost of wasted fuel, or the toll on productivity, traffic congestion is more than just a a local issue — it’s a national issue that touches nearly everyone.
 
