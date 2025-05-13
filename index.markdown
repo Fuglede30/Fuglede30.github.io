@@ -130,25 +130,43 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
 
 ### **Flow through the busiest streets during 24 hours**
 
-
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
+  <!-- New York City -->
   <div style="flex: 1 1 45%; min-width: 300px;">
-    <iframe src="ny_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
+    <div style="overflow:hidden; height:420px;">
+      <iframe 
+        src="ny_top_10_congestion.html" 
+        width="100%" 
+        height="600px" 
+        style="border:none; transform:scale(0.8); transform-origin: top left;">
+      </iframe>
+    </div>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
       New York City (2016–2022)
     </p>
   </div>
+
+  <!-- Los Angeles -->
   <div style="flex: 1 1 45%; min-width: 300px;">
-    <iframe src="la_top_10_congestion.html" width="100%" height="500px" style="border:none;"></iframe>
+    <div style="overflow:hidden; height:420px;">
+      <iframe 
+        src="la_top_10_congestion.html" 
+        width="100%" 
+        height="600px" 
+        style="border:none; transform:scale(0.8); transform-origin: top left;">
+      </iframe>
+    </div>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
       Los Angeles (2016–2022)
     </p>
   </div>
 </div>
 
+<!-- Caption -->
 <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray; margin-top: 10px;">
   Figure 8: Heatmaps showing the hourly top 10 most congested streets in New York City and Los Angeles.
 </p>
+
 
 The hotspots heatmap illustrate the top 10 most congested streets throughout a day in respectively NYC and LA. 
 
