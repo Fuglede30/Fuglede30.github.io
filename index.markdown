@@ -138,7 +138,7 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
         src="ny_top_10_congestion.html" 
         width="100%" 
         height="600px" 
-        style="border:none; transform:scale(0.8); transform-origin: top left;">
+        style="border:none; transform:scale(0.7); transform-origin: top left;">
       </iframe>
     </div>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
@@ -153,7 +153,7 @@ Interestingly, at severity level 3, LA has longer distances but shorter delays, 
         src="la_top_10_congestion.html" 
         width="100%" 
         height="600px" 
-        style="border:none; transform:scale(0.8); transform-origin: top left;">
+        style="border:none; transform:scale(0.7); transform-origin: top left;">
       </iframe>
     </div>
     <p style="text-align: center; font-style: italic; font-size: 0.9em; color: gray;">
