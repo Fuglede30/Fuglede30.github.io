@@ -3,47 +3,47 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: 'Brake the System: Outsmarting urban traffic in NY and LA'
+title: 'Brake the System: Outsmarting urban traffic in NYC and LA'
 ---
 
 # Under the Hood: The Dataset
-Every day, millions of Americans lose precious time sitting in traffic. Whether it’s the frustration of a delayed commute, the cost of wasted fuel, or the toll on productivity, traffic congestion is more than just a a local issure — it’s a national issue that touches nearly everyone.
+Every day, millions of Americans lose precious time and money sitting in traffic. According to Statista in 2020, both the government suffers approximately $66.1 billion USD annually [8] due to car congestions along with private habitants losing around 100 hours weekly [9]. Whether it’s the frustration of a delayed commute, the cost of wasted fuel, or the toll on productivity, traffic congestion is more than just a a local issue — it’s a national issue that touches nearly everyone.
 
-This website explores the complex dataset of traffic congestion in the United States through a powerful, real-world dataset comprising 33 million traffic events across 49 U.S. states, recorded between **March 2016 and September 2022**. The data — sourced from a network of APIs pulling live traffic updates — is rich and comprehensive, drawing on:
+This website explores the complex dataset of traffic congestion in the United States through a real-world dataset comprising 33 million traffic events across 49 U.S. states, recorded between **March 2016 and September 2022**. The data — sourced from a network of APIs pulling live traffic updates — is rich and comprehensive, drawing on:
 
 - Federal and state transportation departments  
 - Law enforcement reports  
 - Roadway sensors and traffic cameras  
 - Real-time GPS and telemetry feeds
 
-Each entry in this **12 GB dataset** is packed with details, from **severity levels** and **expected delays**, to **weather conditions**, **timestamps**, and **geographic coordinates**. Together, these records paint a detailed picture of when, where, and how congestion happens.
+Each entry in this **12 GB dataset** is packed with details, from **severity levels**, **delay in traffic**, to **weather conditions**, **timestamps**, and **geographic coordinates**. Together, these records paint a detailed picture of when, where, and under which conditions congestions happen.
 
-While the dataset spans the entire country, we focus on **New York City** and **Los Angeles** — two iconic urban giants that consistently rank as the most **traffic-congested** and **densely populated** cities in the U.S. [2]. Their scale, diversity, and traffic challenges make them ideal case studies for uncovering patterns, trends, and insights that could apply to cities nationwide. 
-For a reasonable comparison between NYC and LA, we must first know how many observations the dataset has in each city. For NYC, we have $604.606$ observations and for LA we have 905.284 observations. Additionally, NYC is 778.2 km^2 [5] whereas LA is 1.302 km^2 [6]. This suggests that we should also consider the number of streets in each city where car congestions have occurred. For NYC, the number of streets reported where car congestions have occured is ``606``, whereas in LA, the reported number of streets is ``1721`` - more than double. This indicates, that although NYC has 30% less observations than LA, the congestions that do occur in NYC are likely to happen on fewer, more heavily trafficked streets whereas for LA, it has more streets and highways to distribute over. 
+While the dataset spans the entire country, we focus on **New York City** and **Los Angeles** — two iconic urban giants that consistently rank as the top 2 most **traffic-congested** and **densely populated** cities in the U.S. [2]. Their scale, diversity, and traffic challenges make them ideal case studies for uncovering patterns, trends, and insights that could apply to cities nationwide. 
+For a reasonable comparison between NYC and LA, we must first know how many observations the dataset has in each city. For NYC, we have $604.606$ observations and for LA we have $905.284$ observations. Additionally, NYC is $778.2 km^2$ [5] in size whereas LA is $1.302 km^2$ [6]. This suggests that we should also consider the number of streets in each city where car congestions have occurred. For NYC, the number of streets reported where car congestions have occured is $606$, whereas in LA, the reported number of streets is ``1721`` - more than double. This indicates, that although NYC has 30% less observations than LA, the congestions that do occur in NYC are likely to happen on fewer, more heavily trafficked streets whereas for LA, it has more streets and highways to distribute over. 
 
-Our main goal is to help users spot where and when traffic tends to be the worst in each city, and to see how things like weather, time of day, or even the day of the week play a role. With this, we hope to discover patterns that could help improve traffic management, or simply just help commuters make better travel choices.
+Our main goal is to help users spot where and when traffic tends to be the worst in each city, and to see how things like weather, time of day, or even the day of the week play a role. With this, we hope to discover patterns that could help improve traffic management to save money, or simply just help commuters make better travel choices to save time. 
 
 # Clocks and Congestion: How Time Shapes Traffic Trends
-We begin by creating histograms and calender plots to explore the distribution of congestion events over time — specifically across different hours of the day, days of the week, and months of the year. We generate these plots separately for New York City and Los Angeles to allow for a direct comparison between the two.
+We begin by creating histograms and calendar plots to explore the distribution of congestion events over time gradually more granular — specifically across different year, months, days of the week and hours of the day. We generate these plots separately for New York City and Los Angeles to allow for a direct comparison between the two. We ease into the distributions by looking at the number of yearly congestions. 
 <div style="text-align: center;">
   <img src="yearly_boxplot.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
-    Figure  1: Number of car congestions for LA and NYC throughout the years 2016-2022.
+    Figure  1: Number of car congestions for LA and NYC throughout the years 2016-2022. \n (Note: 3 months of observations are missing in 2016 and in 2022 respectively)
   </p>
 </div>
 
-In Figure 1. we see that 2016 and 2022 are the years with the least observations for both cities, which aligns with 3 months missing in each. On the other hand, we see that the number of car congestions in 2017-2019 are fairly stable in both cities. However, LA peaks a bit more than previous years in 2020, and in 2021 we see both cities having a significant increase in number of car congestions. Further, online research shows that New York City, indeed had a *Great Gotham Vroom Boom in 2020*, leading to 19% more bought cars from June to July compared to 2019 due to the first wave of Covid. Due to this, there was an increase in car sales, as people tried to avoid taking public transportation [3][4]. New York City being very public-transport dependent and very urban dense, it would be plausible that the number of car congestions increased during this time. The same spike can be seen for Los Angeles, that is heavily car-centric, that people were likely reluctant to take public transport. Further, LA hosts much of TV production that was otherwise shut down during Covid, and boom in delivery services along with infrastructure projects [4]. 
+In Figure 1. we see that 2016 and 2022 are the years with the least observations for both cities, which aligns with 3 months missing in each in the dataset used. On the other hand, we see that the number of car congestions in 2017-2019 are fairly stable in both cities. However, LA peaks a bit more than previous years in 2020, and in 2021 we see both cities having a significant increase in number of car congestions. Further, online research shows that New York City, indeed had a *Great Gotham Vroom Boom in 2020*, leading to 19% more bought cars from June to July compared to 2019 due to the first wave of Covid. Due to this, there was an increase in car sales, as people tried to avoid taking public transportation [3][4]. New York City being very public-transport dependent and very urban dense, it would be plausible that the number of car congestions increased during this time. The same spike can be seen for Los Angeles, that is heavily car-centric, that people were likely reluctant to take public transport. Further, LA hosts much of TV production that was otherwise shut down during Covid, and boom in delivery services along with infrastructure projects [4]. 
 
-### Weekly trends
+### **Weekly trends**
 <div style="text-align: center;">
   <img src="week_histogram.png" width="150%" />
   <p style="font-style: italic; font-size: 0.9em; color: gray;">
     Figure  2: Weekly average car congestion for LA and NYC.
   </p>
 </div>
-Considering Figure 2, the plots reveals that both cities show similar patterns in terms of when congestion occurs. Weekdays were consistently more congested than weekends. Friday stands out as the busiest day for both cities, with LA reaching over 170,000 congestion events. The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around 35,000 events. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. 
+Considering Figure 2, the plots reveals that both cities show similar patterns in terms of when congestion occurs. Weekdays were consistently more congested than weekends. Friday stands out as the busiest day for both cities, with LA reaching over $170.000$ congestion incidents The numbers start to drop on Saturday and hit their lowest on Sunday, especially in NYC, with only around $35.000$ incidents. This trend makes sense as people are commuting to work during the week, while weekends are typically more relaxed with fewer people on the road. 
 
-### Yearly trends
+### **Monthly trends**
 <div style="text-align: center;">
 <img src="CalenderNY.png" width="100%" /><br />
 <img src="CalenderLA.png" width="100%" /><br />
@@ -51,9 +51,9 @@ Considering Figure 2, the plots reveals that both cities show similar patterns i
     Figure 3: Calendar plots for car congestions in NYC (top) and LA (bottom).
 </p>
 </div>
-Looking at the calender plot in Figure 3, we see that winter months experienced more traffic events compared to summer months. Further, we see that the least busy days are the 1. of January and 4. of July. This pattern may be explained by reduced activity due to post–New Year’s hangovers and, on the 4th, by many individuals being unable to drive due to alcohol consumption. For both calendar plots, we have very similar tendencies. The most busy months are February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is warmer.
+Looking at the calender plot in Figure 3, we see that Winter months experienced more traffic events compared to Summer months. Further, we see that the least busy days are the 1st of January and 4th of July. This pattern may be explained by reduced activity due to post–New Year’s hangovers and, on the 4th, by many individuals being unable to drive due to alcohol consumption. For both calendar plots, we have very similar tendencies. The most busy months are February, March, October, November, and the start of December, with the Christmas vacation reducing the congestion occurrences. A takeaway from this is that it looks like people are more happy to leave the car at home when the weather is warmer.
 
-### The 24-hour cycle of NY and LA traffic
+### **The 24-hour cycle of NY and LA traffic**
 We are now looking at how the traffic congestions evolve through the 24-hour cycle of the day.
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <div style="flex: 1 1 45%; min-width: 300px;">
@@ -180,4 +180,8 @@ The dataset used: [US Traffic Congestions 2016-2022](https://www.kaggle.com/data
 [6] Wikipedia. (n.d.). Los Angeles. Wikipedia, den frie encyklopædi. Hentet 13. maj 2025 fra https://da.wikipedia.org/wiki/Los_Angeles
 
 [7] Drivemode. (2018, June 20). Drivemode data report: Where and when commuting takes the longest. Retrieved May 13, 2025, from https://www.drivemode.com/blog/engineering/drivemode-data-report-commuting-durations/
+
+[8] Statista. 2023. Annual economic losses from traffic congestion in selected urban areas in the United States in 2022 (in billion U.S. dollars). Retrieved May 13, 2025 from https://www.statista.com/chart/21085/annual-economic-losses-from-traffic-congestion/
+
+[9] Visual Capitalist. 2021. How Many Hours Do Americans Lose to Traffic Congestion? Retrieved May 13, 2025, from https://www.visualcapitalist.com/how-many-hours-do-americans-lose-to-traffic-congestion/
  
