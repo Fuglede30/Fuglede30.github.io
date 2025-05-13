@@ -52,7 +52,7 @@ In Figure 3. of our calendar plots, we notice some tendencies. We see that the l
 
 From what we saw in Figure 3, we now look at how specific weather attributes impact traffic delays in Figure 4. From the top left plot, we see that higher temperatures seem to reduce traffic delays in LA quite clearly, while NYC has a more stable trend but starts off with higher delays during colder temperatures. This supports the idea that bad weather slows things down more and people might be more likely to use other means of transportation when the weather is nice. For humidity, LA and NYC show a big spike in delay above 80%, this could come from more extreme weather like rain or heatwaves, which occur when humidity is high. With visibility, both cities see fewer delays when visibility is high, which makes sense as it's easier and safer to drive. Pressure doesn't show any strong trend, but we do see random spikes in delay for both cities, especially in NYC. Overall, it looks like LA traffic is more sensitive to weather changes, while NYC stays more consistent across different weather conditions.
 
-# Top Congestion Hotspots in New York and Los Angeles
+# Top Traffic Bottlenecks: Where Congestion Hits Hardest
 
 We want to look at some of the places where the traffic is overloaded most often, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
 
@@ -103,7 +103,7 @@ Looking at the heatmaps in Figure 8, it’s clear that some areas in both New Yo
 
 In Los Angeles, the worst congestion spots are mostly found in the Boyle Heights area. The top three are the merge between the Santa Monica and Golden State Freeways, the split between the Golden State and San Bernardino Freeways, and the merge between the Santa Ana and San Bernardino Freeways. These are big freeway junctions that see a lot of traffic every day. If the city focused on improving how traffic moves through these spots, it could make a real difference for drivers across L.A.
 
-## The 24-hour cycle of NY and LA traffic
+# The 24-hour cycle of NY and LA traffic
 We are now looking at how the traffic congestions evolve through the 24-hour cycle of the day. We are likely to see that rush hours happen, as they do in most cities. But here we can also see where the rush hour starts and ends.
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
