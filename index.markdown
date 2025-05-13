@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: 'Brake the System: Outsmarting urban traffic in NYC and LA'
+title: "<strong>Brake the System: Outsmarting urban traffic in NYC and LA 🚗</strong>"
 ---
 
 <h1><u>Under the Hood: The Dataset</u></h1>
@@ -76,7 +76,7 @@ We are now looking at how the traffic congestions evolve through the 24-hour cyc
 
 In Figure 4. we notice that in New York City, congestion events were mainly concentrated during the daytime hours from 7 AM to 5 PM. In contrast, Los Angeles showed a different pattern. The busiest hours occurred between 4 PM and 8 PM. However, it's worth noting that between 8 AM and 4 PM, the number of congestion events in Los Angeles is approximately the same as in New York. The key difference — and what contributes to LA having more overall congestion — may come from the additional traffic between 4 PM and 8 PM, where LA experiences significantly more congestion than NY. These differences highlight how the timing and intensity of traffic congestion vary between the two cities, possibly due to differences in work schedules (Los Angeles is known for having a later peak commute, partly due to its flexible work hours and industries like entertainment and tech [7]), commuting behavior, or urban infrastructure.
 
-<h1><u>Weather impact on delay from typical traffic</u></h1>
+<h1><u>Weather impact on delay from typical traffic ⛈️🌡️</u></h1>
 We are now interested in analyzing and testing our assumption on whether the weather attributes played a role on the typical traffic delay. We will use the weather variables ``Temperature(F)``, ``Humidity(%)``, ``Visibility(mi)``, ``Pressure(in)``. We plot these on the x-axis with ``DelayFromTypicalTraffic(mins)`` on the y-axis. To further migitate possible fluctuations for few observations, we use LOWESS smoothing in an attempt to capture a global trend for each weather attribute in relation to delay in typical traffic. 
 <div style="text-align: center;">
   <img src="effect_of_weather_attributes.png" width="150%" />
@@ -93,7 +93,7 @@ For **`Humidity(%)`**, delays stay fairly stable around 1.5 minutes, but begin t
 
 Finally, lower **`Visibility(mi)`** correlates with longer delays in both cities, as drivers become more cautious. However, LA’s delays stabilize more clearly, suggesting it may be better equipped to handle low-visibility conditions.
 
-<h1><u>Top 10 Traffic Bottlenecks: Where Congestion Hits Hardest</u></h1>
+<h1><u>Top 10 Traffic Bottlenecks: Where Congestion Hits Hardest ⛔</u></h1>
 After conducting a general investigation into overall traffic trends in both NYC and LA, we decided to take a closer look at the **top 10 streets** in each city. Our aim was to analyze how these streets differ across various categories. By focusing on the most frequently affected or busiest streets, we want to look at some of the places where the traffic is overloaded the most, in order to maybe choose routes around these places. Other ways we can use this are to alarm the town council to do something about these hotspots.
 
 <div style="text-align: center;">
@@ -128,7 +128,7 @@ Looking at delay relative to typical traffic, NYC has longer delays overall, but
 
 Interestingly, at severity level 3, LA has longer distances but shorter delays, while NYC has shorter distances but longer delays. This contrast suggests that NYC’s severe congestion is more compact and intense, while LA’s is more spread out, causing less delay per mile. 
 
-### **Flow through the busiest streets during 24 hours**
+### **🕓 Flow through the busiest streets during 24 hours**
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; max-width: 100%; margin: auto;">
   <!-- New York City -->
